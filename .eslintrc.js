@@ -2,30 +2,23 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true
+    jest: true,
   },
   extends: [
-    'plugin:react/recommended',
-    'standard-with-typescript',
-    'plugin:security/recommended',
-    'plugin:import/typescript',
-    'prettier'
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "plugin:security/recommended",
+    "plugin:import/typescript",
+    "prettier",
   ],
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: 'tsconfig.json'
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: "tsconfig.json",
   },
-  plugins: [
-    'react',
-    'security'
-  ],
+  plugins: ["react", "security"],
   rules: {
-    'react/jsx-filename-extension': [
-      'error',
-      { extensions: ['.tsx'] },
-    ],
-  }
-}
+    "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
+  },
+};
