@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import WizardService from "src/services/WizardService";
 import Wizard from "src/types/Wizard";
-import ElixirsList from "./ElixirsList";
 
 const WizardsList: React.FC = () => {
   const [wizards, setWizards] = useState<Wizard[]>([]);
@@ -31,7 +30,6 @@ const WizardsList: React.FC = () => {
               <a href={"/wizard/" + wizard.id}>
                 {wizard.firstName} {wizard.lastName}
               </a>
-              <ElixirsList elixirs={wizard.elixirs} />
             </li>
           ))}
         </ul>
