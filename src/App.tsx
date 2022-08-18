@@ -1,11 +1,18 @@
 import React from "react";
 import "./App.css";
 import WizardsList from "./components/WizardsList";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import WizardDetail from "./components/WizardDetail";
 
 function App(): JSX.Element {
   return (
     <div className="App">
-      <WizardsList />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<WizardsList />} />
+          <Route path="/wizard/:id" element={<WizardDetail />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

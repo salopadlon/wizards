@@ -28,7 +28,9 @@ const WizardsList: React.FC = () => {
         <ul className="list-group">
           {wizards.map((wizard: Wizard, index: number) => (
             <li key={index}>
-              <a>{wizard.firstName}</a> <a>{wizard.lastName}</a>
+              <a href={"/wizard/" + wizard.id}>
+                {wizard.firstName} {wizard.lastName}
+              </a>
               <ElixirsList elixirs={wizard.elixirs} />
             </li>
           ))}

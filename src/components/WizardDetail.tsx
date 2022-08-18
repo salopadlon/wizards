@@ -34,19 +34,12 @@ const WizardDetail: React.FC = () => {
   return (
     <div>
       <h4>Wizard</h4>
-      <div className="form-group">
-        <label htmlFor="title">First Name</label>
-        <p>{currentWizard.firstName}</p>
+      <div>
+        <p>
+          {currentWizard.firstName} {currentWizard.lastName}
+        </p>
       </div>
-      <div className="form-group">
-        <label htmlFor="description">Last Name</label>
-        <p>{currentWizard.lastName}</p>
-      </div>
-      <div className="form-group">
-        ``
-        <label>
-          <strong>Elixirs:</strong>
-        </label>
+      <div>
         <ElixirsList elixirs={currentWizard.elixirs} />
       </div>
     </div>
