@@ -244,6 +244,7 @@ body {
   background-image: linear-gradient(to right, #5784d7 0%, #a7bfe8 100%);
 }
 
-li {
-  font-style: italic;
+li, a, th, h4 {
+  /* font-style: italic; */
+  font-family: 'Harry Potter', sans-serif;
 }
