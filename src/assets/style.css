@@ -179,8 +179,6 @@ body {
   margin-right: 20px;
 }
 
-
-
 Edit in JSFiddle
 
     Result
@@ -199,40 +197,39 @@ Edit in JSFiddle
 
 /* List with bullets */
 .list-bullets {
-    list-style: none;
+  list-style: none;
 }
 
 .list-bullets li {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .list-bullets li::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #5784d7;
-    border: 2px solid #8fb3f5;
-    display: block;
-    margin-right: 1rem;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #5784d7;
+  border: 2px solid #8fb3f5;
+  display: block;
+  margin-right: 1rem;
 }
 
 /* Unordered list with custom numbers style */
 ol.custom-numbers {
-    list-style: none;
+  list-style: none;
 }
 
 ol.custom-numbers li {
-    counter-increment: my-awesome-counter;
+  counter-increment: my-awesome-counter;
 }
 
 ol.custom-numbers li::before {
-    content: counter(my-awesome-counter) ". ";
-    color: #2b90d9;
-    font-weight: bold;
+  content: counter(my-awesome-counter) ". ";
+  color: #2b90d9;
+  font-weight: bold;
 }
-
 
 /*
 *
@@ -242,12 +239,11 @@ ol.custom-numbers li::before {
 *
 */
 body {
-    min-height: 100vh;
-    background-color: #6190e8;
-    background-image: linear-gradient(to right, #5784d7 0%, #a7bfe8 100%);
+  min-height: 100vh;
+  background-color: #6190e8;
+  background-image: linear-gradient(to right, #5784d7 0%, #a7bfe8 100%);
 }
 
 li {
-    font-style: italic;
+  font-style: italic;
 }
-

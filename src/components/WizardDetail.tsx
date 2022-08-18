@@ -32,17 +32,6 @@ const WizardDetail: React.FC = () => {
   }, [id]);
 
   return (
-    // <div>
-    //   <h4>Wizard</h4>
-    //   <div>
-    //     <p>
-    //       {currentWizard.firstName} {currentWizard.lastName}
-    //     </p>
-    //   </div>
-    //   <div>
-    //     <ElixirsList elixirs={currentWizard.elixirs} />
-    //   </div>
-    // </div>
     <div className="container py-5">
       <div className="row py-5">
         <div className="col-lg-7 mx-auto">
